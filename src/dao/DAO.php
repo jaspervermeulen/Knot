@@ -1,7 +1,7 @@
 <?php
 
 	class DAO {
-		
+
 		private static $sharedPDO;
 		protected $pdo;
 
@@ -9,7 +9,7 @@
 			if(empty(self::$sharedPDO)) {
 
 				$dbHost = getenv('PHP_DB_HOST') ?: "localhost";
-				$dbName = getenv('PHP_DB_DATABASE') ?: "blobshop";
+				$dbName = getenv('PHP_DB_DATABASE') ?: "knot";
 				$dbUser = getenv('PHP_DB_USERNAME') ?: "admin";
 				$dbPass = getenv('PHP_DB_PASSWORD') ?: "admin";
 

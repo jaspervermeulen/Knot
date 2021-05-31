@@ -1,0 +1,1174 @@
+@font-face{
+    font-family: 'Playfair-Bold';
+    src: url('../assets/fonts/Playfair/PlayfairDisplay-Bold.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Gravity-Regular';
+    src: url('../assets/fonts/Gravity/Gravity-Regular.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Gravity-Bold';
+    src: url('../assets/fonts/Gravity/Gravity-Bold.woff') format('woff');
+}
+
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+html{
+    box-sizing: inherit;
+    font-size: 62.5%;
+    font-family: 'Gravity-Regular';
+}
+
+.hidden{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/***********************************************************************************************************************************************************/
+
+.header{
+    width: 96rem;
+    margin: 5rem auto;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list__link{
+    font-family: 'Gravity-Regular';
+    font-size: 1.8rem;
+    color: black;
+    padding: 1rem;
+}
+
+.list__link--special{
+    font-family: 'Playfair-Bold';
+    font-size: 7.5rem;
+    color: #009FB7;
+}
+
+.list__item--margintop{
+    margin-top: 2rem;
+}
+
+.list__link--button{
+    color: white;
+    background-color: #FED766;
+    padding: 2.5rem 4rem 2.5rem 4rem;
+    font-family: 'Gravity-Bold';
+    
+}
+
+.list__link--buttonticket{
+    color: white;
+    background-color: #009FB7;
+    padding: 2.5rem 4rem 2.5rem 4rem;
+    font-family: 'Gravity-Bold';
+    
+}
+
+.list__link--button:hover{
+    font-size: 1.8rem;
+    font-family: 'Gravity-Bold';
+    color: #FED766;
+    background-color: white;
+    padding: 2.1rem 3.6rem 2.1rem 3.6rem;
+    border: #FED766 0.4rem solid;
+}
+
+.list__link--buttonticket:hover{
+    font-size: 1.8rem;
+    font-family: 'Gravity-Bold';
+    color: #009FB7;
+    background-color: white;
+    padding: 2.1rem 3.6rem 2.1rem 3.6rem;
+    border: #009FB7 0.4rem solid;
+}
+
+/***********************************************************************************************************************************************************/
+
+.intro{
+    width: 96rem;
+    margin: 0 auto;
+}
+
+.intro__wrapper{
+    position: relative;
+    height: 46rem;
+    margin-bottom: 20rem;
+}
+
+.intro__svg{
+    position: absolute;
+    bottom: 0;
+    left: -10rem;
+}
+
+.intro__button{
+    position: absolute;
+    bottom: 6rem;
+    left: 4rem;
+    border: none;
+    font-size: 1.8rem;
+    font-family: 'Gravity-Bold';
+    color: white;
+    background-color: #FE4A49;
+    padding: 2rem 3.5rem 2rem 3.5rem;  
+    z-index: 9999;
+}
+
+.intro__slogan{
+    font-family: 'Playfair-Bold';
+    margin-top: 20rem;
+    font-size: 5rem;
+    margin-left: 8rem;
+}
+
+.intro__svg{
+    margin-top: 7.5rem;
+}
+
+.intro__button:hover{
+    font-size: 1.8rem;
+    font-family: 'Gravity-Bold';
+    color: #FE4A49;
+    background-color: white;
+    padding: 1.6rem 3.1rem 1.6rem 3.1rem;
+    border: #FE4A49 0.4rem solid;
+}
+
+/***********************************************************************************************************************************************************/
+
+.about{
+    width: 96rem;
+    margin: 0 auto;
+    height: 56rem;
+    position: relative;
+}
+
+.info__title{
+    font-family: 'Playfair-Bold';
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.info__text{
+    font-family: 'Gravity-Regular';
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.info__text--before::before{
+    content: url(../assets/img/before__element.svg);
+}
+
+.about__info{
+    border: 0.4rem #009FB7 solid;
+    width: 62rem;
+    height: 56rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about__wrapper{
+    position: absolute;
+    right: 0;
+}
+
+.about__svg{
+    position: absolute;
+    bottom: 2rem;
+    left: -5rem;
+}
+
+.about__button{
+    font-size: 1.8rem;
+    font-family: 'Gravity-Bold';
+    color: white;
+    background-color: #FE4A49;
+    padding: 2rem 3.5rem 2rem 3.5rem;
+    position: absolute;
+    bottom: -2rem;
+    right: 8rem;
+}
+
+.about__button:hover{
+    font-size: 1.8rem;
+    font-family: 'Gravity-Bold';
+    color: #FE4A49;
+    background-color: white;
+    padding: 1.6rem 3.1rem 1.6rem 3.1rem;
+    border: #FE4A49 0.4rem solid;
+}
+
+/***********************************************************************************************************************************************************/
+
+.instruction__title{
+    font-family: 'Playfair-Bold';
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+    margin-left: 25.6rem;
+}
+
+.instruction__text{
+    font-family: 'Gravity-Regular';
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-left: 25.6rem;
+}
+
+.evenement__wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.evenement__button{
+    font-size: 1.8rem;
+    font-family: 'Gravity-Bold';
+    color: white;
+    background-color: #009FB7;
+    padding: 2rem 3.5rem 2rem 3.5rem;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.evenement__button:hover{
+    font-size: 1.8rem;
+    font-family: 'Gravity-Bold';
+    color: #009FB7;
+    background-color: white;
+    padding: 1.6rem 3.1rem 1.6rem 3.1rem;
+    border: #009FB7 0.4rem solid;
+}
+
+.evenement{
+    width: 96rem;
+    margin: 28rem auto;
+    position: relative;
+    height: 34rem;
+}
+
+.evenement__svg{
+    position: absolute;
+    top: 2rem;
+    left: -18rem;
+}
+
+.evenement__instruction{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/***********************************************************************************************************************************************************/
+
+
+.action__title{
+    font-family: 'Playfair-Bold';
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.action__text{
+    font-family: 'Gravity-Regular';
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 5rem;
+}
+
+.agenda{
+    width: 96rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.agenda__button{
+    font-size: 1.8rem;
+    font-family: 'Gravity-Bold';
+    color: white;
+    background-color: #FED766;
+    padding: 2rem 3.5rem 2rem 3.5rem;
+    position: absolute;
+    bottom: -2.5rem;
+    left: 2rem;
+}
+
+.agenda__button:hover{
+    font-size: 1.8rem;
+    font-family: 'Gravity-Bold';
+    color: #FED766;
+    background-color: white;
+    padding: 1.6rem 3.1rem 1.6rem 3.1rem;
+    border: #FED766 0.4rem solid;
+}
+
+.agenda__wrapper{
+    margin-top: 32.5rem;
+}
+
+.agenda__svg{
+    position: absolute;
+    top: -8rem;
+    right: -20rem;
+}
+
+.agenda__action{
+    border: 0.4rem #009FB7 solid;
+    width: 62rem;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/***********************************************************************************************************************************************************/
+
+.activity__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20rem;
+}
+
+.activity{
+    width: 96rem;
+    margin: 24rem auto;
+}
+
+.date__day{
+    font-family: 'Gravity-Bold';
+    font-size: 5rem;
+}
+
+.date__month{
+    font-family: 'Gravity-Bold';
+    font-size: 2rem;
+}
+
+.activity__title{
+    font-family: 'Playfair-Bold';
+    font-size: 4.5rem;
+    margin-bottom: 4rem;
+    text-align: end;
+    margin-right: 4rem;
+}
+
+.item__location{
+    font-family: 'Gravity-Bold';
+    font-size: 1.4rem;
+    border: 0.2rem solid black;
+    align-self: flex-start;
+    padding: 0.25rem;
+    color: black;
+    margin-top: 14rem;
+    margin-left: 2rem;
+}
+
+.bg1{
+    background-image: url('../assets/img/backgroundActivity1.svg');
+    width: 27.8rem;
+    height: 37.1rem;
+    transition: all 0.2s;
+}
+
+.bg2{
+    background-image: url('../assets/img/backgroundActivity2.svg');
+    width: 27.8rem;
+    height: 37.1rem;
+    transition: all 0.2s;
+}
+
+.bg3{
+    background-image: url('../assets/img/backgroundActivity3.svg');
+    width: 27.8rem;
+    height: 37.1rem;
+    transition: all 0.2s;
+}
+
+.activity__item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.item__date{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 2rem;
+}
+
+.date1{
+    background-color: #FE4A49;
+    border: 0.4rem solid white;
+}
+
+.date2{
+    background-color: #009FB7;
+    border: 0.4rem solid white;
+}
+
+.date3{
+    background-color: #FED766;
+    border: 0.4rem solid white;
+}
+
+.item__title{
+    font-family: 'Gravity-Bold';
+    font-size: 2.5rem;
+    color: black;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.item__svg{
+    position: absolute;
+    top: 6rem;
+    left: 4rem;
+}
+
+.item__svg--special{
+    position: absolute;
+    top: 6rem;
+    left: 4rem;
+}
+
+.bg1:hover{
+    background-image: url(../assets/img/backgroundActivity1Hover.svg);
+}
+
+.bg2:hover{
+    background-image: url(../assets/img/backgroundActivity2Hover.svg);
+}
+
+.bg3:hover{
+    background-image: url(../assets/img/backgroundActivity3Hover.svg);
+    
+}
+
+/***********************************************************************************************************************************************************/
+
+.footer{
+    width: 96rem;
+    margin: 0rem auto;
+    display: flex;
+    margin-bottom: 4rem;
+    justify-content: center;
+}
+
+
+.head__title{
+    font-family: 'Playfair-Bold';
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.head__slogan{
+    font-family: 'Gravity-Regular';
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.nav__link{
+    color: black;
+    font-family: 'Gravity-Regular';
+    font-size: 1.6rem;
+}
+
+.footer__head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/***********************************************************************************************************************************************************/
+
+.contact{
+    width: 96rem;
+    margin: 12rem auto;
+}
+
+.contact__title{
+    font-family: 'Playfair-Bold';
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-left: 7rem;
+}
+
+.contact__text{
+    font-family: 'Gravity-Regular';
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-left: 4.4rem;
+    margin-bottom: 7rem;
+}
+
+.contact__info{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 34rem 34rem 25rem;
+    grid-template-rows: 12rem 12rem 12rem;
+    grid-template-areas: 
+    "name mail ."
+    "message message  ."
+    "message message contact ";
+}
+
+.info__label--name{
+    grid-area: name;
+}
+
+.info__label--mail{
+    grid-area: mail;
+}
+
+.info__label--message{
+    grid-area: message;
+}
+
+.info__button--contact{
+    font-family: 'Gravity-Bold';
+    font-size: 1.8rem;
+    padding: 2rem 3rem;
+    background-color: #FE4A49;
+    color: white;
+    outline: none;
+    align-self: flex-end;
+    margin-bottom: 3.5rem;
+    cursor: pointer;
+    grid-area: contact;
+}
+
+.info__button--contact:hover{
+    background-color: white;
+    color: #FE4A49;
+    padding: 1.6rem 2.6rem;
+    border: 0.4rem #FE4A49 solid;
+}
+
+.info__label--textarea{
+    border: 0.2rem #FED766 solid;
+    width: 64rem;
+    height: 15rem;
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    outline: none;
+}
+
+/***********************************************************************************************************************************************************/
+
+.member{
+    width: 96rem;
+    margin: 10.5rem auto;
+}
+
+.member__title{
+    font-family: 'Playfair-Bold';
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-left: 7rem;
+}
+
+.member__text{
+    font-family: 'Gravity-Regular';
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-left: 4.4rem;
+    margin-bottom: 7rem;
+}
+
+.info__label--text{
+    font-family: 'Gravity-Regular';
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.info__label--input{
+    border: 0.2rem #FED766 solid;
+    width: 30rem;
+    height: 4.3rem;
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    outline: none;
+}
+
+.member__info{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 34rem 34rem 25rem;
+    grid-template-rows: 12rem 12rem 12rem;
+    grid-template-areas: 
+    "firstname lastname ."
+    "adres place ."
+    "email news button";
+}
+
+.member__info--special{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 34rem 34rem 25rem;
+    grid-template-rows: 12rem 12rem 12rem;
+    grid-template-areas: 
+    "firstname lastname ."
+    "email news button";
+}
+
+.info__label--firstname{
+    grid-area: firstname;
+}
+
+.info__label--lastname{
+    grid-area: lastname;
+}
+
+.info__label--adres{
+    grid-area: adres;
+}
+
+.info__label--place{
+    grid-area: place;
+}
+
+.info__label--email{
+    grid-area: email;
+}
+
+.info__label--news{
+    margin-top: 2.5rem;
+    grid-area: news;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__button{
+    grid-area: button;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    -webkit-appearance:button;
+
+    border: solid 0.2rem #FED766;
+
+    width:3rem;
+    height:3rem;
+    outline: none;
+}
+
+input[type=checkbox]:checked {
+    background-color:#FED766;
+}
+
+.info__label--checkboxtext{
+    font-family: 'Gravity-Regular';
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    line-height: 1.8;
+}
+
+.info__button{
+    font-family: 'Gravity-Bold';
+    font-size: 1.8rem;
+    padding: 2rem 3rem;
+    background-color: #FE4A49;
+    color: white;
+    outline: none;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.info__button:hover{
+    background-color: white;
+    color: #FE4A49;
+    padding: 1.6rem 2.6rem;
+    border: 0.4rem #FE4A49 solid;
+}
+
+
+/***********************************************************************************************************************************************************/
+
+.tickets{
+    width: 96rem;
+    margin: 10rem auto;
+}
+.tickets__text{
+    font-family: 'Gravity-Regular';
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-left: 4.4rem;
+}
+
+.tickets__title{
+    font-family: 'Playfair-Bold';
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-left: 7rem;
+}
+
+.tickets__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem;
+}
+
+.item__ticket{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ticket__title{
+    font-family: 'Gravity-Regular';
+    font-size: 3rem;
+}
+
+.ticket__price{
+    font-family: 'Gravity-Bold';
+    font-size: 4rem;
+}
+
+/***********************************************************************************************************************************************************/
+
+.text__link{
+    color: #009FB7;
+    text-decoration: underline;
+}
+
+/***********************************************************************************************************************************************************/
+
+.search{
+    width: 96rem;
+    margin: 10rem auto;
+    display: flex;
+}
+
+.search__title{
+    font-family: 'Playfair-Bold';
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-left: 7rem;
+}
+
+.search__text{
+    font-family: 'Gravity-Regular';
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-left: 4.4rem;
+}
+
+.search__event{
+    margin-left: 12.5rem;
+    display: grid;
+    grid-template-columns: 35rem 10rem;
+    grid-template-areas: 
+    "place ."
+    "where button";
+}
+
+.event__label--where{
+    grid-area: where;
+}
+
+.event__label--place{
+    grid-area: place;
+}
+
+.event__label--question{
+    font-family: 'Gravity-Regular';
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.event__label--anwser{
+    border: 0.2rem #FED766 solid;
+    width: 30rem;
+    height: 4.3rem;
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    outline: none;
+    margin-bottom: 1.5rem;
+}
+
+.search__event--button{
+    margin-top: 2rem;
+    height: 5rem;
+    grid-area: button;
+    font-family: 'Gravity-Bold';
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+    background-color: #FE4A49;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.search__event--button:hover{
+    background-color: white;
+    color: #FE4A49;
+    padding: 0.4rem 1.1rem;
+    border: 0.4rem #FE4A49 solid;
+}
+
+.items{
+    width: 96rem;
+    margin: 0rem auto;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.items__list{
+    
+    background-image: url(../assets/img/backgroundAgenda.svg);
+    width: 43.5rem;
+    height: 21.6rem;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.list__date{
+    font-family: 'Gravity-Bold';
+    font-size: 5rem;
+    align-self: flex-end;
+    color: white;
+    background-color: #009FB7;
+    padding: 1.5rem;
+    border: 0.4rem solid white;
+}
+
+.list__date--month{
+    font-size: 2rem;
+}
+
+.list__place{
+    font-family: 'Gravity-Bold';
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.list__title{
+    font-family: 'Gravity-Bold';
+    font-size: 3.5rem;
+    margin-left: 2rem;
+}
+
+.items__link:hover{
+    background-image: url(../assets/img/backgroundAgendaHover.svg);
+}
+
+
+/***********************************************************************************************************************************************************/
+
+.detail{
+    width: 96rem;
+    margin: 0rem auto;
+    margin-bottom: 8rem;
+    position: relative;
+}
+
+.detail__go{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gravity-Regular';
+    
+}
+
+.go__link{
+    color: black;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.detail__information{
+    margin-top: 2rem;
+}
+
+.explan__title{
+    font-family: 'Playfair-Bold';
+    font-size: 5rem;
+    margin-left: 7.5rem;
+    margin-bottom: 2rem;
+    margin-top: 8rem;
+}
+
+.explan__text{
+    color: black;
+    font-size: 1.8rem;
+    font-family: 'Gravity-Regular';
+    margin-left: 4.8rem;
+    line-height: 1.8;
+}
+
+.information__other{
+    border: #FE4A49 solid 0.4rem;
+    width: 25rem;
+    margin-left: 10rem;
+    margin-top: 11rem;
+    margin-bottom: 10rem;
+}
+
+.other__list{
+    margin: 2rem;
+    margin-right: 5rem;
+}
+
+.other__question{
+    font-family: 'Gravity-Bold';
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.other__anwser{
+    font-family: 'Gravity-Regular';
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.detail__svg{
+    position: absolute;
+    bottom: -8rem;
+    right: 0;
+}
+
+.error{
+    margin-top: 0.25rem;
+    font-size: 1.4rem;
+    font-family: 'Gravity-Bold';
+    color: red;
+}
+
+.member__succes{
+    font-family: 'Playfair-Bold';
+    font-size: 6rem;
+    margin-top: 35rem;
+   
+}
+
+.wrapper__succes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.member__succes--info{
+    margin-bottom: 26rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-family: 'Gravity-Regular';
+}
+
+.wrapper__contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact__succes{
+    font-family: 'Playfair-Bold';
+    font-size: 6rem;
+    margin-top: 25rem;
+}
+
+.wrapper__ticket{
+    margin-top: 18rem;
+    margin-bottom: 24.5rem;
+    display: flex;
+    font-family: 'Gravity-Regular';
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.ticket__succes--info{
+    padding-top: 1.5rem;
+}
+
+.ticket__border{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border: solid 0.4rem green;
+}
+
+.error__agenda{
+    margin-bottom: 2rem;
+}
+
+.scroll{
+    cursor: pointer;
+}
+
+
+.aboutus{
+    position: relative;
+    width: 96rem;
+    margin: 0rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10rem;
+    grid-template-rows: 9rem 18rem 18rem 9rem 16rem 16rem;
+    grid-template-areas: 
+    "title title"
+    "one one"
+    "two two"
+    ". ."
+    "three three"
+    "four four";
+}
+
+.aboutus__title{
+    font-family: 'Playfair-Bold';
+    font-size: 5rem;
+    margin-left: 7rem;
+    grid-area: title;
+}
+
+.aboutus__text{
+    font-family: 'Gravity-Regular';
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.aboutus__text--one{
+    grid-area: one;
+    margin-top: 2rem;
+}
+
+.aboutus__svg--one{
+    position: absolute;
+    top: 8rem;
+    right: -8rem;
+}
+
+.aboutus__text--two{
+    grid-area: two;
+}
+
+.aboutus__text--three{
+    grid-area: three;
+    margin-left: 35rem;
+}
+
+.aboutus__text--four{
+    grid-area: four;
+    margin-left: 35rem;
+    
+}
+
+.aboutus__svg--two{
+    position: absolute;
+    bottom: -6rem;
+    left: -8rem;
+   
+}
+
+.review__button--agenda{
+    font-size: 1.8rem;
+    font-family: 'Gravity-Bold';
+    color: white;
+    background-color: #FE4A49;
+    padding: 2rem 3.5rem 2rem 3.5rem;
+    margin-bottom: 15rem;
+}
+
+.review__button--agenda:hover{
+    font-size: 1.8rem;
+    font-family: 'Gravity-Bold';
+    color: #FE4A49;
+    background-color: white;
+    padding: 1.6rem 3.1rem 1.6rem 3.1rem;
+    border: #FE4A49 0.4rem solid;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20rem 0 5rem 0;
+}
+
+.review__title{
+    font-family: 'Playfair-Bold';
+    font-size: 5rem;
+    grid-area: title;
+    margin-bottom: 4rem;
+}
+
+.review__article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+}
+
+.article__name{
+    font-family: 'Gravity-Bold';
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.article__info{
+    font-family: 'Gravity-Regular';
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+
+.review__button--member{
+    font-size: 1.8rem;
+    font-family: 'Gravity-Bold';
+    color: white;
+    background-color: #009FB7;
+    padding: 2rem 3.5rem 2rem 3.5rem;
+    margin: 10rem 0 10rem 0;
+}
+
+.review__button--member:hover{
+    font-size: 1.8rem;
+    font-family: 'Gravity-Bold';
+    color: #009FB7;
+    background-color: white;
+    padding: 1.6rem 3.1rem 1.6rem 3.1rem;
+    border: #009FB7 0.4rem solid;
+}
+
+.review__svg{
+    
+}
+
+.active{
+    border-bottom: 0.4rem #009FB7 dotted ;
+}
