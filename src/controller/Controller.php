@@ -4,14 +4,34 @@ class Controller {
 
   public $route;
   protected $viewVars = array();
+  protected $env = 'development';
 
   public function filter() {
+    if (basename(dirname(dirname(__FILE__))) != 'src') {
+      $this->env = 'production';
+    }
     call_user_func(array($this, $this->route['action']));
   }
 
   public function render() {
+    // load javascript through webpack-dev-server (not MAMP!)
+    $this->set('js', '<script src="http://localhost:8080/script.js"></script>');
+    // webpack dev server: css is injected by the script
+    $this->set('css', '');
+    if ($this->env == 'production') {
+      // regular script in production
+      $this->set('js', '<script src="script.js"></script>');
+       // regular css in production
+      $this->set('css', '<link href="style.css" rel="stylesheet">');
+    }
     $this->createViewVarWithContent();
     $this->renderInLayout();
+    if (!empty($_SESSION['info'])) {
+      unset($_SESSION['info']);
+    }
+    if (!empty($_SESSION['error'])) {
+      unset($_SESSION['error']);
+    }
   }
 
   public function set($variableName, $value) {

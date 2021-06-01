@@ -1,13 +1,14 @@
+require('./style.css');
 {
     const init = () => {
         console.log('START');
         document.querySelector('.scroll').addEventListener('click', handleClick);
-        
+
         //document.querySelector('.form-submit').classList.add('has-js');
 
         //document.querySelectorAll('.filter__field').forEach($field => $field.addEventListener('input', handleInputField));
 
-        
+
     }
 
     const handleInputField = () => {
